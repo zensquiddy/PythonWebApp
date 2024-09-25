@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% set active_page = "index" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1></h1>
+	
+	 <div class="container mt-3">
+  <h2>Job Application</h2>
+  <p>This is the offical "Job Application". After filling out the form you will be told the best job you can get for the rest of your life.</p>
+  <form action="/action_page.php">
+    <label for="sel1" class="form-label">What is your age.</label>
+    <select class="form-select" id="sel1" name="sellist1">
+	  <option>Select Your Age. </option>
+      <option>15-18</option>
+      <option>19-30</option>
+      <option>31-40</option>
+      <option>41-50</option>
+	  <option>50+</option>
+    </select>
+    <br>
+	
+	
+	<form action="/action_page.php">
+    <label for="sel1" class="form-label">What is your gender?</label>
+	<input type="text" class="form-control" id="gender" placeholder="Type your gender." name="gender">
+	<br>
+	
+	
+	<form action="/action_page.php">
+    <label for="sel1" class="form-label">What is your highest education.</label>
+    <select class="form-select" id="sel1" placeholder="Select Your Highest Education" name="sellist1">
+      <option>None</option>
+      <option>Elementary School</option>
+      <option>Middle School</option>
+	  <option>High School</option>
+	  <option>Associates</option>
+	  <option>Bacholers</option>
+	  <option>Masters</option>
+	  <option>PHD</option>
+    </select>
+    <br>
+	
+	<form action="/action_page.php">
+    <label for="sel1" class="form-label">Were you homeschooled at any point in your education?</label>
+    <select class="form-select" id="sel1" placeholder="Select Your Highest Education" name="sellist1">
+	  <option>Select one.</option>
+      <option>Yes</option>
+	  <option>No</option>
+    </select>
+    <br>
+	
+	<form action="/action_page.php">
+    <label for="sel1" class="form-label">If answered yes to the question above. Type the highest education you received during homeschooling. (Optional) (Cap Sensititve) </label>
+	<input type="text" class="form-control" id="gender" placeholder="Type out your major here." name="gender">
+	<br>
+	
+	<form action="/action_page.php">
+    <label for="sel1" class="form-label">If answered to anything above high school, type out your major. (Optional) (Cap Sensitive)</label>
+	<input type="text" class="form-control" id="gender" placeholder="Type out your major here." name="gender">
+	<br>
+  
+	
+	<form action="/action_page.php">
+    <label for="sel1" class="form-label">Type the name of the establishment you recieved your highest education from. (Cap Sensitive)</label>
+	<input type="text" class="form-control" id="gender" placeholder="Type the establishment here." name="gender">
+	<br>
+	
+	
+	
+	<form action="/action_page.php">
+    <label for="sel1" class="form-label">Type out your job preferance. (Cap Sensitive)</label>
+	<input type="text" class="form-control" id="gender" placeholder="Type your job preferance here." name="gender">
+	<br>
+	
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+{% endblock %}
