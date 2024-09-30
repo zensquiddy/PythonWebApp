@@ -11,9 +11,15 @@
 	 <div class="container mt-3">
   <h2>Job Application</h2>
   <p>This is the offical "Job Application". After filling out the form you will be told the best job you can get for the rest of your life.</p>
-  <form action="/action_page.php">
+  
+  <form action="/response">
+    <label for="sel1" class="form-label">What is your Name?</label>
+	<input type="text" class="form-control" id="gender" placeholder="Type your name." name="Name">
+	<br>
+  
+  <form action="/response">
     <label for="sel1" class="form-label">What is your age.</label>
-    <select class="form-select" id="sel1" name="sellist1">
+    <select class="form-select" id="sel1" name="Age">
 	  <option>Select Your Age. </option>
       <option>15-18</option>
       <option>19-30</option>
@@ -24,15 +30,15 @@
     <br>
 	
 	
-	<form action="/action_page.php">
+	<form action="/response">
     <label for="sel1" class="form-label">What is your gender?</label>
-	<input type="text" class="form-control" id="gender" placeholder="Type your gender." name="gender">
+	<input type="text" class="form-control" id="gender" placeholder="Type your gender." name="Gender">
 	<br>
 	
 	
-	<form action="/action_page.php">
+	<form action="/response">
     <label for="sel1" class="form-label">What is your highest education.</label>
-    <select class="form-select" id="sel1" placeholder="Select Your Highest Education" name="sellist1">
+    <select class="form-select" id="sel1" placeholder="Select Your Highest Education" name="Education">
       <option>None</option>
       <option>Elementary School</option>
       <option>Middle School</option>
@@ -46,34 +52,34 @@
 	
 	<form action="/action_page.php">
     <label for="sel1" class="form-label">Were you homeschooled at any point in your education?</label>
-    <select class="form-select" id="sel1" placeholder="Select Your Highest Education" name="sellist1">
+    <select class="form-select" id="sel1" placeholder="Select Your Highest Education" name="Homeschooled">
 	  <option>Select one.</option>
-      <option>Yes</option>
-	  <option>No</option>
+      <option>Was</option>
+	  <option>Not</option>
     </select>
     <br>
 	
 	<form action="/action_page.php">
-    <label for="sel1" class="form-label">If answered yes to the question above. Type the highest education you received during homeschooling. (Optional) (Cap Sensititve) </label>
-	<input type="text" class="form-control" id="gender" placeholder="Type out your major here." name="gender">
+    <label for="sel1" class="form-label">If answered yes to the question above. Type the highest education you received during homeschooling. (Skip if not Applicable) (Cap Sensititve) </label>
+	<input type="text" class="form-control" id="HomeschoolEducation" placeholder="Type out your major here." name="HomeschoolEducation">
 	<br>
 	
 	<form action="/action_page.php">
-    <label for="sel1" class="form-label">If answered to anything above high school, type out your major. (Optional) (Cap Sensitive)</label>
-	<input type="text" class="form-control" id="gender" placeholder="Type out your major here." name="gender">
+    <label for="sel1" class="form-label">If answered to anything above high school, type out your major. (Skip if not Applicable) (Cap Sensitive)</label>
+	<input type="text" class="form-control" id="Major" placeholder="Type out your major here." name="Major">
 	<br>
   
 	
 	<form action="/action_page.php">
-    <label for="sel1" class="form-label">Type the name of the establishment you recieved your highest education from. (Cap Sensitive)</label>
-	<input type="text" class="form-control" id="gender" placeholder="Type the establishment here." name="gender">
+    <label for="sel1" class="form-label">Type the name of the establishment you recieved your highest education from. (Write Home if homeschooled) (Cap Sensitive)</label>
+	<input type="text" class="form-control" id="Establishment" placeholder="Type the establishment here." name="Establishment">
 	<br>
 	
 	
 	
 	<form action="/action_page.php">
     <label for="sel1" class="form-label">Type out your job preferance. (Cap Sensitive)</label>
-	<input type="text" class="form-control" id="gender" placeholder="Type your job preferance here." name="gender">
+	<input type="text" class="form-control" id="Preferance" placeholder="Type your job preferance here." name="Preferance">
 	<br>
 	
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
