@@ -28,7 +28,7 @@ def render_response():
     if Major != "":
         reply1 = reply1 + "I Majored in " + Major + "." 
     
-    reply1 = reply1 + " I recived my highest education at " + Establishment + ". My prefered job is a " + Preferance + "."
+    reply1 = reply1 + " I recived my highest education at " + Establishment + ". My prefered job is a " + Preferance + "." + "PLEASE PASTE THE SENTENCE RECEIVED TO CHATGPT OR ANY CHAT AI BOT."
         
     return render_template('response.html', response = reply1)
     
