@@ -26,9 +26,11 @@ def render_response():
     if HomeschoolEducation != "":
         reply1 = reply1 + " The Highest education I recieved while homeschooled was " + HomeschoolEducation + "."
     if Major != "":
-        reply1 = reply1 + "I Majored in " + Major + "." 
-    
-    reply1 = reply1 + " I recived my highest education at " + Establishment + ". My prefered job is a " + Preferance + "." + "PLEASE PASTE THE SENTENCE RECEIVED TO CHATGPT OR ANY CHAT AI BOT."
+        reply1 = reply1 + " I Majored in " + Major + "." 
+    if Establishment != "":
+        reply1 = reply1 + " I recived my highest education at " + Establishment 
+        
+    reply1 = reply1 + "." " My prefered job is a " + Preferance + ". " + "What job would be the best for me? " + "PLEASE PASTE THE SENTENCE RECEIVED TO CHATGPT OR ANY CHAT AI BOT."
         
     return render_template('response.html', response = reply1)
     
